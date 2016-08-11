@@ -135,7 +135,7 @@ namespace ModernHttpClient
                 }
             } catch (IOException ex) {
                 if (ex.Message.ToLowerInvariant().Contains("canceled")) {
-                    throw new OperationCanceledException();
+                    throw new System.OperationCanceledException();
                 }
 
                 throw;
